@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&family=Sedgwick+Ave+Display&family=Shantell+Sans:ital@1&display=swap');
 
+body{
+    background-color: rgb(90, 100, 90);
+}
 
 h1 {
     background-color: blueviolet;
@@ -9,7 +12,10 @@ h1 {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 10px;
+    border-style: solid;
     font-size: 50px;
+    border-width: 5px;
+    border-color: aquamarine;
 }
 
 body > div#topImage {
@@ -50,10 +56,91 @@ body > div#startButton > button:hover{
     cursor: pointer;
 }
 
-body > div.content{
+.content{
     margin: 20px;
-    border: 3px solid black;
+    border: 3px solid wheat;
     width: "1280";
     height: "720";
-    background-color: aqua;
+    background-color: black;
+}
+
+.content #choicesOne{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: red;
+}
+.content #choicesSecond{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: orange;
+}
+.content #choicesThird{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: yellow;
+}
+.content #choicesFourth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: green;
+}
+.content #choicesFifth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: blue;
+}
+.content #choicesSixth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: indigo;
+}
+.content #choicesSeventh{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: violet;
+}
+.content #choicesEighth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: brown;
+}
+.content #choicesNinth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: pink;
+}
+.content #choicesTenth{
+    text-align: center;
+    color: black;
+    margin: 20px;
+    margin-top: -20px;
+    padding-top: -50px;
+    background-color: purple;
 }
