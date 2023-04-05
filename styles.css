@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&family=Sedgwick+Ave+Display&family=Shantell+Sans:ital@1&display=swap');
+
+
+h1 {
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: Bangers;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+body > div#topImage {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    align-self: center;
+    padding-left: 250px;
+}
+
+h3 {
+    font-family: Sedgwick Ave Display;
+    text-align: center;
+}
+
+h4 {
+    font-family: Shantell Sans;
+    text-align: center;
+}
+
+body > div#startButton{
+    text-align: center;
+}
+
+body > div#startButton > button{
+    font-family: Lilita One;
+    padding: 10px;
+    border: 10px;
+    background-color: violet;
+    border-radius: 10px;
+    border-color: turquoise;
+    transition: background-color .3s, color .3s;
+}
+
+body > div#startButton > button:hover{
+    background-color: turquoise;
+    color: beige;
+    cursor: pointer;
+}
+
+body > div.content{
+    margin: 20px;
+    border: 3px solid black;
+    width: "1280";
+    height: "720";
+    background-color: aqua;
+}
