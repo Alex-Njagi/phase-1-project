@@ -12,20 +12,18 @@ fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=m
         let eightS = (data.results[7].question);                //Variable to hold the eighth question
         let nineS = (data.results[8].question);                 //Variable to hold the ninth question
         let tenS = (data.results[9].question);                  //Variable to hold the tenth question
-
-        document.write(oneS);
-        document.write(twoS);
-        document.write(threeS);
-        document.write(fourS);
-        document.write(fiveS);
-        document.write(sixS);
-        document.write(sevenS);
-        document.write(eightS);
-        document.write(nineS);
-        document.write(tenS);
+    oneS
+    
+    document.getElementById(`first`).innerHTML=`#1. ${oneS}`
+    document.getElementById(`second`).innerHTML=`#2. ${twoS}`
+    document.getElementById(`third`).innerHTML=`#3. ${threeS}`
+    document.getElementById(`fourth`).innerHTML=`#4. ${fourS}`
+    document.getElementById(`fifth`).innerHTML=`#5. ${fiveS}`
+    document.getElementById(`sixth`).innerHTML=`#6. ${sixS}`
+    document.getElementById(`seventh`).innerHTML=`#7. ${sevenS}`
+    document.getElementById(`eighth`).innerHTML=`#8. ${eightS}`
+    document.getElementById(`ninth`).innerHTML=`#9. ${nineS}`
+    document.getElementById(`tenth`).innerHTML=`#10. ${tenS}`
 })
 }
 generator()
-
-
-
