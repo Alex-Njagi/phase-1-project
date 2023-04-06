@@ -1,7 +1,7 @@
 function generator (){
-fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple`)
-.then (res =>res.json())
-.then ((data)=>{
+    fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple`)
+    .then (res =>res.json())
+    .then ((data)=>{
     //This code displays the ten questions to the user
     document.getElementById(`first`).innerHTML=`#1. ${data.results[0].question}`
     document.getElementById(`second`).innerHTML=`#2. ${data.results[1].question}`
@@ -74,7 +74,6 @@ fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=m
             C. ${data.results[9].correct_answer}
             D. ${data.results[9].incorrect_answers[1]}
         `
-    
     let ansOne = (data.results[0].correct_answer);
     let ansTwo = (data.results[1].correct_answer);
     let ansThree = (data.results[2].correct_answer);
@@ -85,8 +84,23 @@ fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=m
     let ansEight = (data.results[7].correct_answer);
     let ansNine = (data.results[8].correct_answer);
     let ansTen = (data.results[9].correct_answer);
-}) 
+    //return ansOne, ansTwo, ansThree, ansFour, ansFive, ansSix, ansSeven, ansEight, ansNine, ansTen
+    
+    /*document.getElementById(`firstAnswer`).addEventListener(`input`, ()=>{
+
+    })*/
+    document.getElementById(`firstAnswerSub`).addEventListener(`click`, ()=>{
+        let points = 0;
+        let trialOne = document.getElementById(`firstAnswer`).value
+        if (trialOne == ansOne){
+            points = points + 1
+        } else if (trialOne != ansOne){
+            points = points
+        }
+    })
+    })
 }
+
 document.getElementById(`button`).addEventListener(`click`, ()=>{
     generator()
 });
