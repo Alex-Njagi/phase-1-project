@@ -15,67 +15,78 @@ fetch (`https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=m
     document.getElementById(`tenth`).innerHTML=`#10. ${data.results[9].question}`
 
     document.getElementById(`choicesOne`).innerHTML=`
-            ${data.results[0].incorrect_answers[1]},
-            ${data.results[0].incorrect_answers[0]},
-            ${data.results[0].correct_answer},
-            ${data.results[0].incorrect_answers[2]},
+            A. ${data.results[0].incorrect_answers[1]}
+            B. ${data.results[0].incorrect_answers[0]}
+            C. ${data.results[0].correct_answer}
+            D. ${data.results[0].incorrect_answers[2]}
         `
     document.getElementById(`choicesSecond`).innerHTML=`
-            ${data.results[1].incorrect_answers[2]},
-            ${data.results[1].correct_answer},
-            ${data.results[1].incorrect_answers[1]},
-            ${data.results[1].incorrect_answers[0]},
+            A. ${data.results[1].incorrect_answers[2]}
+            B. ${data.results[1].correct_answer}
+            C. ${data.results[1].incorrect_answers[1]}
+            D. ${data.results[1].incorrect_answers[0]}
         `
     document.getElementById(`choicesThird`).innerHTML=`
-            ${data.results[2].incorrect_answers[2]},
-            ${data.results[2].incorrect_answers[1]},
-            ${data.results[2].correct_answer},
-            ${data.results[2].incorrect_answers[0]},
+            A. ${data.results[2].incorrect_answers[2]}
+            B. ${data.results[2].incorrect_answers[1]}
+            C. ${data.results[2].correct_answer}
+            D. ${data.results[2].incorrect_answers[0]}
         `
     document.getElementById(`choicesFourth`).innerHTML=`
-            ${data.results[3].correct_answer},
-            ${data.results[3].incorrect_answers[1]},
-            ${data.results[3].incorrect_answers[2]},
-            ${data.results[3].incorrect_answers[0]},
+            A. ${data.results[3].correct_answer}
+            B. ${data.results[3].incorrect_answers[1]}
+            C. ${data.results[3].incorrect_answers[2]}
+            D. ${data.results[3].incorrect_answers[0]}
         `
     document.getElementById(`choicesFifth`).innerHTML=`
-            ${data.results[4].incorrect_answers[1]},
-            ${data.results[4].correct_answer},
-            ${data.results[4].incorrect_answers[2]},
-            ${data.results[4].incorrect_answers[0]},
+            A. ${data.results[4].incorrect_answers[1]}
+            B. ${data.results[4].correct_answer}
+            C. ${data.results[4].incorrect_answers[2]}
+            D. ${data.results[4].incorrect_answers[0]}
         `
     document.getElementById(`choicesSixth`).innerHTML=`
-            ${data.results[5].incorrect_answers[0]},
-            ${data.results[5].correct_answer},
-            ${data.results[5].incorrect_answers[1]},
-            ${data.results[5].incorrect_answers[2]},
+            A. ${data.results[5].incorrect_answers[0]}
+            B. ${data.results[5].correct_answer}
+            C. ${data.results[5].incorrect_answers[1]}
+            D. ${data.results[5].incorrect_answers[2]}
         `
     document.getElementById(`choicesSeventh`).innerHTML=`
-            ${data.results[6].incorrect_answers[0]},
-            ${data.results[6].incorrect_answers[1]},
-            ${data.results[6].incorrect_answers[2]},
-            ${data.results[6].correct_answer},
+            A. ${data.results[6].incorrect_answers[0]}
+            B. ${data.results[6].incorrect_answers[1]}
+            C. ${data.results[6].incorrect_answers[2]}
+            D. ${data.results[6].correct_answer}
         `
     document.getElementById(`choicesEighth`).innerHTML=`
-            ${data.results[7].incorrect_answers[2]},
-            ${data.results[7].incorrect_answers[1]},
-            ${data.results[7].incorrect_answers[0]},
-            ${data.results[7].correct_answer},
+            A. ${data.results[7].incorrect_answers[2]}
+            B. ${data.results[7].incorrect_answers[1]}
+            C. ${data.results[7].incorrect_answers[0]}
+            D. ${data.results[7].correct_answer}
         `
     document.getElementById(`choicesNinth`).innerHTML=`
-            ${data.results[8].correct_answer},
-            ${data.results[8].incorrect_answers[0]},
-            ${data.results[8].incorrect_answers[1]},
-            ${data.results[8].incorrect_answers[2]},
+            A. ${data.results[8].correct_answer}
+            B. ${data.results[8].incorrect_answers[0]}
+            C. ${data.results[8].incorrect_answers[1]}
+            D. ${data.results[8].incorrect_answers[2]}
         `
     document.getElementById(`choicesTenth`).innerHTML=`
-            ${data.results[9].incorrect_answers[0]},
-            ${data.results[9].incorrect_answers[2]},
-            ${data.results[9].correct_answer},
-            ${data.results[9].incorrect_answers[1]},
+            A. ${data.results[9].incorrect_answers[0]}
+            B. ${data.results[9].incorrect_answers[2]}
+            C. ${data.results[9].correct_answer}
+            D. ${data.results[9].incorrect_answers[1]}
         `
-})
+    
+    let ansOne = (data.results[0].correct_answer);
+    let ansTwo = (data.results[1].correct_answer);
+    let ansThree = (data.results[2].correct_answer);
+    let ansFour = (data.results[3].correct_answer);
+    let ansFive = (data.results[4].correct_answer);
+    let ansSix = (data.results[5].correct_answer);
+    let ansSeven = (data.results[6].correct_answer);
+    let ansEight = (data.results[7].correct_answer);
+    let ansNine = (data.results[8].correct_answer);
+    let ansTen = (data.results[9].correct_answer);
+}) 
 }
-generator()
-//document.getElementById(`startButton`).addEventListener(`click`, generator())
-
+document.getElementById(`button`).addEventListener(`click`, ()=>{
+    generator()
+});
