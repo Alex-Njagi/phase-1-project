@@ -86,26 +86,116 @@ function generator (){
     let ansTen = (data.results[9].correct_answer);
     let points = 0;
 
-    document.getElementById(`firstAnswerSub`).addEventListener(`click`, ()=>{
+    document.getElementById(`firstAnswerSub`).addEventListener(`click`, (event)=>{
         let trialOne = document.getElementById(`firstAnswer`).value
         if (trialOne == ansOne){
             points = points + 1
         } else if (trialOne != ansOne){
             points = points
         }
+        event.target.style[`display`]=`none`;
         console.log(points);
     })
 
-    document.getElementById(`secondAnswerSub`).addEventListener(`click`, ()=>{
+    document.getElementById(`secondAnswerSub`).addEventListener(`click`, (event)=>{
         let trialTwo = document.getElementById(`secondAnswer`).value
         if (trialTwo == ansTwo){
             points = points + 1
         } else if (trialTwo != ansTwo){
             points = points
         }
+        event.target.style[`display`]=`none`;
         console.log(points);
     })
     
+    document.getElementById(`thirdAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialThree = document.getElementById(`thirdAnswer`).value
+        if (trialThree == ansThree){
+            points = points + 1
+        } else if (trialThree != ansThree){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`fourthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialFourth = document.getElementById(`fourthAnswer`).value
+        if (trialFourth == ansFour){
+            points = points + 1
+        } else if (trialFourth != ansFour){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`fifthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialFifth = document.getElementById(`fifthAnswer`).value
+        if (trialFifth == ansFive){
+            points = points + 1
+        } else if (trialFifth != ansFive){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`sixthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialSixth = document.getElementById(`sixthAnswer`).value
+        if (trialSixth == ansFive){
+            points = points + 1
+        } else if (trialSixth != ansSix){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`seventhAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialSeventh = document.getElementById(`seventhAnswer`).value
+        if (trialSeventh == ansSeven){
+            points = points + 1
+        } else if (trialSeventh != ansSeven){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`eighthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialEighth = document.getElementById(`eighthAnswer`).value
+        if (trialEighth == ansEight){
+            points = points + 1
+        } else if (trialEighth != ansEight){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`ninthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialNinth = document.getElementById(`ninthAnswer`).value
+        if (trialNinth == ansNine){
+            points = points + 1
+        } else if (trialNinth != ansNine){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
+    document.getElementById(`tenthAnswerSub`).addEventListener(`click`, (event)=>{
+        let trialTenth = document.getElementById(`tenthAnswer`).value
+        if (trialTenth == ansTen){
+            points = points + 1
+        } else if (trialTenth != ansTen){
+            points = points
+        }
+        event.target.style[`display`]=`none`;
+        console.log(points);
+    })
+
     })
 }
 
