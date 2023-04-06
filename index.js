@@ -84,20 +84,28 @@ function generator (){
     let ansEight = (data.results[7].correct_answer);
     let ansNine = (data.results[8].correct_answer);
     let ansTen = (data.results[9].correct_answer);
-    //return ansOne, ansTwo, ansThree, ansFour, ansFive, ansSix, ansSeven, ansEight, ansNine, ansTen
-    
-    /*document.getElementById(`firstAnswer`).addEventListener(`input`, ()=>{
+    let points = 0;
 
-    })*/
     document.getElementById(`firstAnswerSub`).addEventListener(`click`, ()=>{
-        let points = 0;
         let trialOne = document.getElementById(`firstAnswer`).value
         if (trialOne == ansOne){
             points = points + 1
         } else if (trialOne != ansOne){
             points = points
         }
+        console.log(points);
     })
+
+    document.getElementById(`secondAnswerSub`).addEventListener(`click`, ()=>{
+        let trialTwo = document.getElementById(`secondAnswer`).value
+        if (trialTwo == ansTwo){
+            points = points + 1
+        } else if (trialTwo != ansTwo){
+            points = points
+        }
+        console.log(points);
+    })
+    
     })
 }
 
