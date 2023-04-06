@@ -196,6 +196,9 @@ function generator (){
         console.log(points);
     })
 
+    document.getElementById(`resultsButton`).addEventListener(`click`, (event)=>{
+        event.target.value=`Congrats! You scored a total of ${points} points!! :D`
+    })
     })
 }
 
