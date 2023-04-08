@@ -227,7 +227,63 @@ function generator (){
     })
     })
 }
+
+//This event handles the first like button
+document.getElementById(`firstLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the second like button
+document.getElementById(`secondLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the third like button
+document.getElementById(`thirdLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the fourth like button
+document.getElementById(`fourthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the fifth like button
+document.getElementById(`fifthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the sixth like button
+document.getElementById(`sixthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the seventh like button
+document.getElementById(`seventhLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`red`        //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the eighth like button
+document.getElementById(`eighthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the ninth like button
+document.getElementById(`ninthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+//This event handles the tenth like button
+document.getElementById(`tenthLike`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`deeppink`   //Changes the background colour
+    event.target.style[`color`]=`white`                 //Changes the colour
+})
+
 //This event invokes the previous function and runs the code
-document.getElementById(`button`).addEventListener(`click`, ()=>{
-    generator()
+document.getElementById(`button`).addEventListener(`click`, (event)=>{
+    event.target.style[`background-color`]=`red`    //Temporarily changes the button's colour
+    generator()                                     //Invokes the main function
+    setTimeout(()=>
+        event.target.style[`background-color`]=`violet`,2000
+    )
 });
