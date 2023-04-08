@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&family=Sedgwick+Ave+Display&family=Shantell+Sans:ital@1&display=swap');
 
 body{
-    background-color: rgb(90, 100, 90);
+    background-color: rgb(94, 1, 134);
 }
 
 h1 {
@@ -165,8 +165,16 @@ body > div#button > button:hover{
     color: white;
 }
 
-#results{
-    border-color: white;
-    background-color: gold;
-    padding: 20px;
+.results #resultsButton{
+    width: 350px;
+    font-family: Lilita One;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color .3s, color .3s;
+}
+
+.results #resultsButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
