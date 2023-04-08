@@ -164,6 +164,30 @@ body > div#button > button:hover{
     background-color: black;
     color: white;
 }
+/*.content #firstLike{
+    cursor: pointer;
+    font-family: Lilita One;
+    font-size: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 30px;
+}*/
+
+.content #firstLike, #secondLike, #thirdLike, #fourthLike, #fifthLike, #sixthLike, #seventhLike, 
+            #eighthLike, #ninthLike, #tenthLike{
+    cursor: pointer;
+    font-family: Lilita One;
+    font-size: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 30px;
+}
 
 .results #resultsButton{
     width: 350px;
