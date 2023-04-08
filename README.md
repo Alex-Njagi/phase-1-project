@@ -35,4 +35,6 @@
 3. AUTHOR AND LICENSE
 + This project was fully and wholly designed, coded, implemented and tested by Alex Njagi and was completed on Saturday, 8th April, 2023.
 
++ Licensed by MIT
+
 ---------------------------------------------------------------------------------------------------------
